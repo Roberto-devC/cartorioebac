@@ -138,14 +138,11 @@ main()
 {	 /* Incio variável/strings */
 	int opcao = 0; /* Variável*/
 	int laco;
-	char senhadigitada[]="a";
-	
 	 /* fim variavel/strings*/
 	
 
-	comparacao = strcmp(senhadigitada, "admin"); /* atribuição da senha */
-	
-	if(comparacao==0)/* Início laço de comparação */
+
+
 	{
 		system("cls");
 		
@@ -159,6 +156,7 @@ main()
 				printf("\t1: Registrar nomes: \n");
 			  	printf("\t2: Colsultar nomes: \n");
 			  	printf("\t3: Deletar nomes: \n");
+			  	printf("\t4: Sair do Sistema: \n\n");
 			  	printf("Opção: ");/* Fim do menu*/
 				  	
 			  	scanf("%d", &opcao); /* Armazenamento da escolha do usúario */
@@ -179,7 +177,10 @@ main()
 				deletar();/*chamada da função (deletar)*/
 		  	  	break;
 		  	  	
-		  	  	
+		  	  	case 4: 
+		  	  	printf("Obrigado por utilizar nosso Sistema! \n");
+		  	  	return 0;
+		  	  	break;
 		  		
 		  		default:/*caso usuário entrar com uma informação inválida */
 		  		
