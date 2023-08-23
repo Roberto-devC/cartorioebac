@@ -138,11 +138,18 @@ main()
 {	 /* Incio variável/strings */
 	int opcao = 0; /* Variável*/
 	int laco;
+	char senhadigitada[]="a";
+	int comparacao;
 	 /* fim variavel/strings*/
 	
-
-
-
+	 /*tela de login*/
+	printf("\t\t### Cartório da EBAC ### \n\n");
+	printf("Login de administrador : \n\n Digite sua senha: ");
+	scanf("%s", senhadigitada);
+	
+	comparacao = strcmp(senhadigitada, "admin"); /* atribuição da senha */
+	
+	if(comparacao==0)/* Início laço de comparação */
 	{
 		system("cls");
 		
@@ -191,7 +198,8 @@ main()
 		  	}/* Fim da seleção */
         }/* Fim do laço de repetição */
     }
-
+	else
+        printf("Senha incorreta!\n");/* Fim laço de comparação */
 	    
    
     
